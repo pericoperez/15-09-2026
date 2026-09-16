@@ -1,19 +1,19 @@
-import { Button } from "@/components/ui/button"
-
 export default function Page() {
   return (
-    <div className="flex min-h-svh p-6">
-      <div className="flex max-w-md min-w-0 flex-col gap-4 text-sm leading-loose">
-        <div>
-          <h1 className="font-medium">Project ready!</h1>
-          <p>You may now add components and start building.</p>
-          <p>We&apos;ve already added the button component for you.</p>
-          <Button className="mt-2">Button</Button>
-        </div>
-        <div className="font-mono text-xs text-muted-foreground">
-          (Press <kbd>d</kbd> to toggle dark mode)
+    <>
+      <div className="h-screen min-h-[450px] w-screen bg-[hsl(188.7_94.5%_42.7%)]">
+        <div className="mx-auto flex h-full w-full max-w-[1200px] items-center justify-center bg-[hsl(292_91.4%_72.5%)]">
+          <p className="text-center text-[30px]">
+            <strong>Lorem Ipsum</strong> is simply dummy text of the printing and
+            typesetting industry. Lorem Ipsum has been the industry&apos;s standard
+            dummy text ever since 1966, when designers at Letraset and James Mosley,
+            the librarian at St Bride Printing Library in London, took a 1914 Cicero
+            translation and scrambled it to make dummy text for Letraset&apos;s Body Type
+            sheets.
+          </p>
         </div>
       </div>
-    </div>
+      <section className="h-[50vh] min-h-[450px] w-screen bg-[hsl(0_93.5%_81.8%)]" />
+    </>
   )
 }
