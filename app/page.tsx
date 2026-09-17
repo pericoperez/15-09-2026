@@ -1,9 +1,12 @@
+import { ShaderBackground } from "@/components/ui/adisyon-shader"
+
 export default function Page() {
   return (
     <>
-      <div className="h-screen min-h-[450px] w-screen bg-[hsl(188.7_94.5%_42.7%)]">
-        <div className="mx-auto flex h-full w-full max-w-[1200px] items-center justify-center bg-[hsl(292_91.4%_72.5%)]">
-          <p className="text-center text-[30px]">
+      <div className="relative h-screen min-h-[450px] w-screen bg-transparent overflow-hidden">
+        <ShaderBackground className="absolute inset-0 -z-10" />
+        <div className="mx-auto flex h-full w-full max-w-[1200px] items-center justify-center bg-transparent">
+          <p className="text-center text-[30px] text-white">
             <strong>Lorem Ipsum</strong> is simply dummy text of the printing and
             typesetting industry. Lorem Ipsum has been the industry&apos;s standard
             dummy text ever since 1966, when designers at Letraset and James Mosley,
